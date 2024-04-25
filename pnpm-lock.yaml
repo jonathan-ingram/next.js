@@ -825,17 +825,17 @@ importers:
         specifier: 8.4.31
         version: 8.4.31
       react:
-        specifier: ^18.2.0
-        version: 18.2.0
+        specifier: 19.0.0-canary-cb151849e1-20240424
+        version: 19.0.0-canary-cb151849e1-20240424
       react-dom:
-        specifier: ^18.2.0
-        version: 18.2.0(react@18.2.0)
+        specifier: 19.0.0-canary-cb151849e1-20240424
+        version: 19.0.0-canary-cb151849e1-20240424(react@19.0.0-canary-cb151849e1-20240424)
       sass:
         specifier: ^1.3.0
         version: 1.54.0
       styled-jsx:
         specifier: 5.1.1
-        version: 5.1.1(@babel/core@7.22.5)(react@18.2.0)
+        version: 5.1.1(@babel/core@7.22.5)(react@19.0.0-canary-cb151849e1-20240424)
     optionalDependencies:
       sharp:
         specifier: ^0.33.3
@@ -1410,7 +1410,7 @@ importers:
         version: 1.0.35
       unistore:
         specifier: 3.4.1
-        version: 3.4.1(react@18.2.0)
+        version: 3.4.1(react@19.0.0-canary-cb151849e1-20240424)
       util:
         specifier: 0.12.4
         version: 0.12.4
@@ -21335,6 +21335,15 @@ packages:
       scheduler: 0.25.0-beta-94eed63c49-20240425
     dev: true
 
+  /react-dom@19.0.0-canary-cb151849e1-20240424(react@19.0.0-canary-cb151849e1-20240424):
+    resolution: {integrity: sha512-J20FmrVUSpjzVXKPuK4q6Gj/aUufdJ3VlHH53zMmWLLH0uXG39ISl2p3iyXQeeGJHz/nW5YQ10s9UEoIp2eDwQ==}
+    peerDependencies:
+      react: 19.0.0-canary-cb151849e1-20240424
+    dependencies:
+      react: 19.0.0-canary-cb151849e1-20240424
+      scheduler: 0.25.0-canary-cb151849e1-20240424
+    dev: false
+
   /react-is@19.0.0-beta-94eed63c49-20240425:
     resolution: {integrity: sha512-jG3jI4NjfbeH899/6kP16TUT+CeVUFNDTw8nPvUxaLSPZVY3s33PRbOOcrd3X4r5nlsyozOYEzkomUlLM3bZcw==}
 
@@ -21448,11 +21457,16 @@ packages:
     engines: {node: '>=0.10.0'}
     dependencies:
       loose-envify: 1.4.0
+    dev: false
 
   /react@19.0.0-beta-94eed63c49-20240425:
     resolution: {integrity: sha512-BPPKh5bZwcpw/Dgfh3A0MoU1GSl2edR2JggCq3QPdghQsrFg1aBuMkul5YB4rpII400RYq9VC5eF5Nm3spx0gA==}
     engines: {node: '>=0.10.0'}
     dev: true
+
+  /react@19.0.0-canary-cb151849e1-20240424:
+    resolution: {integrity: sha512-sX0ec4kqR1z2PAMdCo0cztaYaoGbpy2EoS5hAzUsBekB9FFnGWP4jbYK7GFURTIh5EK9ny1Mmgkb1hiyVYkj4Q==}
+    engines: {node: '>=0.10.0'}
 
   /read-cache@1.0.0:
     resolution: {integrity: sha512-Owdv/Ft7IjOgm/i0xvNDZ1LrRANRfew4b2prF3OWMQLxLfu3bS8FVhCsrSCMK4lR56Y9ya+AThoTpDCTxCmpRA==}
@@ -22460,6 +22474,10 @@ packages:
   /scheduler@0.25.0-beta-94eed63c49-20240425:
     resolution: {integrity: sha512-U8hoOV7uut5E8cMvRSMikEBBqLXfv2BpdxUsG45euaOfnqEgFrCdLLh6ydM+YBJ36+28olXMNmK2PFFzeg4UdQ==}
     dev: true
+
+  /scheduler@0.25.0-canary-cb151849e1-20240424:
+    resolution: {integrity: sha512-Cn5wjkCw+Md7mnE1xWmvmVRsvMvnxRhCQGOvoOUR0u78d2aZfyXxXK05BsKztsHiYg4w0nSOFX7822/XcxnRxg==}
+    dev: false
 
   /schema-utils@2.7.1:
     resolution: {integrity: sha512-SHiNtMOUGWBQJwzISiVYKu82GiV4QYGePp3odlY1tuKO7gPtphAT5R/py0fA6xtbgLL/RvtJZnU9b8s0F1q0Xg==}
@@ -23567,6 +23585,24 @@ packages:
       client-only: 0.0.1
       react: 19.0.0-beta-94eed63c49-20240425
     dev: true
+
+  /styled-jsx@5.1.1(@babel/core@7.22.5)(react@19.0.0-canary-cb151849e1-20240424):
+    resolution: {integrity: sha512-pW7uC1l4mBZ8ugbiZrcIsiIvVx1UmTfw7UkC3Um2tmfUq9Bhk8IiyEIPl6F8agHgjzku6j0xQEZbfA5uSgSaCw==}
+    engines: {node: '>= 12.0.0'}
+    peerDependencies:
+      '@babel/core': '*'
+      babel-plugin-macros: '*'
+      react: '>= 16.8.0 || 17.x.x || ^18.0.0-0'
+    peerDependenciesMeta:
+      '@babel/core':
+        optional: true
+      babel-plugin-macros:
+        optional: true
+    dependencies:
+      '@babel/core': 7.22.5
+      client-only: 0.0.1
+      react: 19.0.0-canary-cb151849e1-20240424
+    dev: false
 
   /stylehacks@4.0.3:
     resolution: {integrity: sha512-7GlLk9JwlElY4Y6a/rmbH2MhVlTyVmiJd1PfTCqFaIBEGMYNsrO/v3SeGTdhBThLg4Z+NbOk/qFMwCa+J+3p/g==}
@@ -24788,7 +24824,7 @@ packages:
       unist-util-is: 5.2.0
       unist-util-visit-parents: 5.1.3
 
-  /unistore@3.4.1(react@18.2.0):
+  /unistore@3.4.1(react@19.0.0-canary-cb151849e1-20240424):
     resolution: {integrity: sha512-p2Ej8qqrqcD10Ah0ZUKUU/mhRB8pM4q6gzjxq9kZpgxa8dks7oHT8jDP4CqLhoRof3RXOZLKB9EBV1DTzHiJRw==}
     peerDependencies:
       preact: '*'
@@ -24799,7 +24835,7 @@ packages:
       react:
         optional: true
     dependencies:
-      react: 18.2.0
+      react: 19.0.0-canary-cb151849e1-20240424
     dev: true
 
   /universal-github-app-jwt@1.1.1:
