@@ -57,6 +57,14 @@ describe('parallel-route-not-found', () => {
     expect(warnings.length).toBe(0)
   })
 
+  it('should handle `notFound()` in generateMetadata on a page that also renders a parallel route', async () => {
+    const browser = await next.browser('/not-found-metadata')
+
+    expect(await browser.elementByCss('body').text()).toMatch(
+      /This page could not be found/
+    )
+  })
+
   if (isNextDev) {
     it('should not log any warnings for a regular not found page', async () => {
       const browser = await next.browser('/this-page-doesnt-exist')
